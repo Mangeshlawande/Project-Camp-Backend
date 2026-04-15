@@ -1,0 +1,3 @@
+- JWT based authentication
+- Access + refresh tokens
+- Email verification

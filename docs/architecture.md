@@ -1,0 +1,2 @@
+- Modular architecture
+- Each module contains controller, service, model
