@@ -1,6 +1,7 @@
-import  { Schema } from "mongoose";
+import { AvailableUserRole, UserRolesEnum } from "#src/utils/constants.js";
+import { Schema } from "mongoose";
 
- export const userSchema = new Schema(
+export const userSchema = new Schema(
     {
         avatar: {
             type: {
@@ -37,6 +38,11 @@ import  { Schema } from "mongoose";
         },
         refreshToken: {
             type: String,
+        },
+        role: {
+            type: String,
+            enum: AvailableUserRole,
+            default: UserRolesEnum.MEMBER,
         },
         isEmailVerified: {
             type: Boolean,
